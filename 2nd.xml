@@ -15,7 +15,7 @@
           </block>
         </value>
         <next>
-          <block type="procedures_callnoreturn" id="118">
+          <block type="procedures_callnoreturn" id="5">
             <mutation name="motor speed"></mutation>
             <next>
               <block type="controls_whileUntil" id="6" inline="false">
@@ -82,7 +82,7 @@
                               </block>
                             </value>
                             <next>
-                              <block type="procedures_callnoreturn" id="130">
+                              <block type="procedures_callnoreturn" id="21">
                                 <mutation name="motor speed"></mutation>
                                 <next>
                                   <block type="robot_delay" id="22" inline="true">
@@ -101,13 +101,13 @@
                                               </block>
                                             </value>
                                             <next>
-                                              <block type="procedures_callnoreturn" id="129">
+                                              <block type="procedures_callnoreturn" id="27">
                                                 <mutation name="motor speed"></mutation>
                                                 <next>
-                                                  <block type="variables_set" id="27" inline="true">
+                                                  <block type="variables_set" id="28" inline="true">
                                                     <field name="VAR">direction</field>
                                                     <value name="VALUE">
-                                                      <block type="math_number" id="28">
+                                                      <block type="math_number" id="29">
                                                         <field name="NUM">2</field>
                                                       </block>
                                                     </value>
@@ -174,7 +174,7 @@
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="procedures_callnoreturn" id="131">
+                                  <block type="procedures_callnoreturn" id="41">
                                     <mutation name="motor speed"></mutation>
                                     <next>
                                       <block type="robot_delay" id="42" inline="true">
@@ -193,7 +193,7 @@
                                                   </block>
                                                 </value>
                                                 <next>
-                                                  <block type="procedures_callnoreturn" id="132">
+                                                  <block type="procedures_callnoreturn" id="47">
                                                     <mutation name="motor speed"></mutation>
                                                   </block>
                                                 </next>
@@ -210,43 +210,43 @@
                           </block>
                         </statement>
                         <next>
-                          <block type="variables_set" id="47" inline="true">
+                          <block type="variables_set" id="48" inline="true">
                             <field name="VAR">direction</field>
                             <value name="VALUE">
-                              <block type="math_number" id="48">
+                              <block type="math_number" id="49">
                                 <field name="NUM">2</field>
                               </block>
                             </value>
                             <next>
-                              <block type="controls_if" id="49" inline="false">
+                              <block type="controls_if" id="50" inline="false">
                                 <value name="IF0">
-                                  <block type="logic_operation" id="50" inline="true">
+                                  <block type="logic_operation" id="51" inline="true">
                                     <field name="OP">LAND</field>
                                     <value name="A">
-                                      <block type="logic_compare" id="51" inline="true">
+                                      <block type="logic_compare" id="52" inline="true">
                                         <field name="OP">LT</field>
                                         <value name="A">
-                                          <block type="math_number" id="52">
+                                          <block type="math_number" id="53">
                                             <field name="NUM">40</field>
                                           </block>
                                         </value>
                                         <value name="B">
-                                          <block type="sensor_spectrometer" id="53">
+                                          <block type="sensor_spectrometer" id="54">
                                             <field name="LIGHT">YELLOW</field>
                                           </block>
                                         </value>
                                       </block>
                                     </value>
                                     <value name="B">
-                                      <block type="logic_compare" id="54" inline="true">
+                                      <block type="logic_compare" id="55" inline="true">
                                         <field name="OP">LT</field>
                                         <value name="A">
-                                          <block type="sensor_spectrometer" id="55">
+                                          <block type="sensor_spectrometer" id="56">
                                             <field name="LIGHT">YELLOW</field>
                                           </block>
                                         </value>
                                         <value name="B">
-                                          <block type="math_number" id="56">
+                                          <block type="math_number" id="57">
                                             <field name="NUM">55</field>
                                           </block>
                                         </value>
@@ -255,12 +255,12 @@
                                   </block>
                                 </value>
                                 <statement name="DO0">
-                                  <block type="movement_stop" id="57">
+                                  <block type="movement_stop" id="58">
                                     <next>
-                                      <block type="variables_set" id="58" inline="true">
+                                      <block type="variables_set" id="59" inline="true">
                                         <field name="VAR">stop</field>
                                         <value name="VALUE">
-                                          <block type="math_number" id="59">
+                                          <block type="math_number" id="60">
                                             <field name="NUM">4</field>
                                           </block>
                                         </value>
@@ -283,18 +283,18 @@
       </block>
     </next>
   </block>
-  <block type="procedures_defnoreturn" id="110" x="-547" y="-557">
+  <block type="procedures_defnoreturn" id="61" x="-547" y="-557">
     <mutation></mutation>
     <field name="NAME">motor speed</field>
     <statement name="STACK">
-      <block type="movement_setmotors" id="111" inline="true">
+      <block type="movement_setmotors" id="62" inline="true">
         <value name="BOTHMOVLEFT">
-          <block type="math_number" id="112">
+          <block type="math_number" id="63">
             <field name="NUM">82</field>
           </block>
         </value>
         <value name="BOTHMOVRIGHT">
-          <block type="math_number" id="113">
+          <block type="math_number" id="64">
             <field name="NUM">100</field>
           </block>
         </value>
