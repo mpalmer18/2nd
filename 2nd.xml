@@ -216,7 +216,7 @@
                                             <field name="OP">LT</field>
                                             <value name="A">
                                               <block type="math_number" id="52">
-                                                <field name="NUM">33</field>
+                                                <field name="NUM">40</field>
                                               </block>
                                             </value>
                                             <value name="B">
