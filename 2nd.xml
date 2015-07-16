@@ -183,44 +183,34 @@
                         <next>
                           <block type="controls_if" id="54" inline="false">
                             <value name="IF0">
-                              <block type="logic_compare" id="226" inline="true">
-                                <field name="OP">EQ</field>
+                              <block type="logic_operation" id="202" inline="true">
+                                <field name="OP">LAND</field>
                                 <value name="A">
-                                  <block type="sensor_spectrometer" id="56">
-                                    <field name="LIGHT">YELLOW</field>
-                                  </block>
-                                </value>
-                                <value name="B">
-                                  <block type="logic_operation" id="202" inline="true">
-                                    <field name="OP">LAND</field>
+                                  <block type="logic_compare" id="210" inline="true">
+                                    <field name="OP">LT</field>
                                     <value name="A">
-                                      <block type="logic_compare" id="210" inline="true">
-                                        <field name="OP">LT</field>
-                                        <value name="A">
-                                          <block type="math_number" id="211">
-                                            <field name="NUM">33</field>
-                                          </block>
-                                        </value>
-                                        <value name="B">
-                                          <block type="math_number" id="212">
-                                            <field name="NUM">44</field>
-                                          </block>
-                                        </value>
+                                      <block type="math_number" id="211">
+                                        <field name="NUM">33</field>
                                       </block>
                                     </value>
                                     <value name="B">
-                                      <block type="logic_compare" id="55" inline="true">
-                                        <field name="OP">LT</field>
-                                        <value name="A">
-                                          <block type="math_number" id="209">
-                                            <field name="NUM">44</field>
-                                          </block>
-                                        </value>
-                                        <value name="B">
-                                          <block type="math_number" id="57">
-                                            <field name="NUM">55</field>
-                                          </block>
-                                        </value>
+                                      <block type="sensor_spectrometer" id="227">
+                                        <field name="LIGHT">YELLOW</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="logic_compare" id="55" inline="true">
+                                    <field name="OP">LT</field>
+                                    <value name="A">
+                                      <block type="sensor_spectrometer" id="56">
+                                        <field name="LIGHT">YELLOW</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="57">
+                                        <field name="NUM">55</field>
                                       </block>
                                     </value>
                                   </block>
