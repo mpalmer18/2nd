@@ -15,7 +15,7 @@
           </block>
         </value>
         <next>
-          <block type="movement_setmotors" id="78" inline="true" disabled="true">
+          <block type="movement_setmotors" id="78" inline="true">
             <value name="BOTHMOVLEFT">
               <block type="math_number" id="79">
                 <field name="NUM">84</field>
