@@ -1,22 +1,55 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_if" id="178" inline="false" x="-52" y="193">
-    <value name="IF0">
-      <block type="logic_compare" id="204" inline="true">
-        <field name="OP">EQ</field>
+  <block type="controls_whileUntil" id="312" inline="false" x="-44" y="133">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="logic_compare" id="391" inline="true">
+        <field name="OP">GT</field>
         <value name="A">
-          <block type="sensor_spectrometer" id="197">
-            <field name="LIGHT">BLUE</field>
+          <block type="sensor_spectrometer" id="363">
+            <field name="LIGHT">IR880</field>
           </block>
         </value>
         <value name="B">
-          <block type="math_number" id="211">
-            <field name="NUM">100</field>
+          <block type="math_number" id="398">
+            <field name="NUM">20</field>
           </block>
         </value>
       </block>
     </value>
-    <statement name="DO0">
-      <block type="movement_reverse" id="286"></block>
+    <statement name="DO">
+      <block type="movement_left" id="322">
+        <next>
+          <block type="robot_delay" id="324" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="332">
+                <field name="NUM">1600</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
     </statement>
+    <next>
+      <block type="controls_if" id="178" inline="false">
+        <value name="IF0">
+          <block type="logic_compare" id="204" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="sensor_spectrometer" id="197">
+                <field name="LIGHT">BLUE</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="211">
+                <field name="NUM">80</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="movement_stop" id="296"></block>
+        </statement>
+      </block>
+    </next>
   </block>
 </xml>
