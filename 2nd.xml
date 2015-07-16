@@ -32,7 +32,7 @@
           </block>
         </statement>
         <next>
-          <block type="controls_if" id="178" inline="false">
+          <block type="controls_if" id="178" inline="false" disabled="true">
             <value name="IF0">
               <block type="logic_compare" id="204" inline="true">
                 <field name="OP">LT</field>
