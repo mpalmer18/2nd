@@ -15,17 +15,8 @@
           </block>
         </value>
         <next>
-          <block type="movement_setmotors" id="78" inline="true">
-            <value name="BOTHMOVLEFT">
-              <block type="math_number" id="79">
-                <field name="NUM">84</field>
-              </block>
-            </value>
-            <value name="BOTHMOVRIGHT">
-              <block type="math_number" id="80">
-                <field name="NUM">100</field>
-              </block>
-            </value>
+          <block type="procedures_callnoreturn" id="118">
+            <mutation name="motor speed"></mutation>
             <next>
               <block type="controls_whileUntil" id="6" inline="false">
                 <field name="MODE">WHILE</field>
@@ -91,17 +82,8 @@
                               </block>
                             </value>
                             <next>
-                              <block type="movement_setmotors" id="81" inline="true">
-                                <value name="BOTHMOVLEFT">
-                                  <block type="math_number" id="82">
-                                    <field name="NUM">84</field>
-                                  </block>
-                                </value>
-                                <value name="BOTHMOVRIGHT">
-                                  <block type="math_number" id="83">
-                                    <field name="NUM">100</field>
-                                  </block>
-                                </value>
+                              <block type="procedures_callnoreturn" id="130">
+                                <mutation name="motor speed"></mutation>
                                 <next>
                                   <block type="robot_delay" id="22" inline="true">
                                     <value name="DELAY">
@@ -119,23 +101,14 @@
                                               </block>
                                             </value>
                                             <next>
-                                              <block type="variables_set" id="27" inline="true">
-                                                <field name="VAR">direction</field>
-                                                <value name="VALUE">
-                                                  <block type="math_number" id="28">
-                                                    <field name="NUM">2</field>
-                                                  </block>
-                                                </value>
+                                              <block type="procedures_callnoreturn" id="129">
+                                                <mutation name="motor speed"></mutation>
                                                 <next>
-                                                  <block type="movement_setmotors" id="69" inline="true">
-                                                    <value name="BOTHMOVLEFT">
-                                                      <block type="math_number" id="76">
-                                                        <field name="NUM">84</field>
-                                                      </block>
-                                                    </value>
-                                                    <value name="BOTHMOVRIGHT">
-                                                      <block type="math_number" id="77">
-                                                        <field name="NUM">100</field>
+                                                  <block type="variables_set" id="27" inline="true">
+                                                    <field name="VAR">direction</field>
+                                                    <value name="VALUE">
+                                                      <block type="math_number" id="28">
+                                                        <field name="NUM">2</field>
                                                       </block>
                                                     </value>
                                                   </block>
@@ -201,17 +174,8 @@
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="movement_setmotors" id="84" inline="true">
-                                    <value name="BOTHMOVLEFT">
-                                      <block type="math_number" id="85">
-                                        <field name="NUM">84</field>
-                                      </block>
-                                    </value>
-                                    <value name="BOTHMOVRIGHT">
-                                      <block type="math_number" id="86">
-                                        <field name="NUM">100</field>
-                                      </block>
-                                    </value>
+                                  <block type="procedures_callnoreturn" id="131">
+                                    <mutation name="motor speed"></mutation>
                                     <next>
                                       <block type="robot_delay" id="42" inline="true">
                                         <value name="DELAY">
@@ -229,17 +193,8 @@
                                                   </block>
                                                 </value>
                                                 <next>
-                                                  <block type="movement_setmotors" id="87" inline="true">
-                                                    <value name="BOTHMOVLEFT">
-                                                      <block type="math_number" id="88">
-                                                        <field name="NUM">84</field>
-                                                      </block>
-                                                    </value>
-                                                    <value name="BOTHMOVRIGHT">
-                                                      <block type="math_number" id="89">
-                                                        <field name="NUM">100</field>
-                                                      </block>
-                                                    </value>
+                                                  <block type="procedures_callnoreturn" id="132">
+                                                    <mutation name="motor speed"></mutation>
                                                   </block>
                                                 </next>
                                               </block>
@@ -327,5 +282,23 @@
         </next>
       </block>
     </next>
+  </block>
+  <block type="procedures_defnoreturn" id="110" x="-547" y="-557">
+    <mutation></mutation>
+    <field name="NAME">motor speed</field>
+    <statement name="STACK">
+      <block type="movement_setmotors" id="111" inline="true">
+        <value name="BOTHMOVLEFT">
+          <block type="math_number" id="112">
+            <field name="NUM">84</field>
+          </block>
+        </value>
+        <value name="BOTHMOVRIGHT">
+          <block type="math_number" id="113">
+            <field name="NUM">100</field>
+          </block>
+        </value>
+      </block>
+    </statement>
   </block>
 </xml>
