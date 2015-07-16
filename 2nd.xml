@@ -23,7 +23,7 @@
             </value>
             <value name="BOTHMOVRIGHT">
               <block type="math_number" id="80">
-                <field name="NUM">98</field>
+                <field name="NUM">100</field>
               </block>
             </value>
             <next>
@@ -99,7 +99,7 @@
                                 </value>
                                 <value name="BOTHMOVRIGHT">
                                   <block type="math_number" id="83">
-                                    <field name="NUM">98</field>
+                                    <field name="NUM">100</field>
                                   </block>
                                 </value>
                                 <next>
@@ -135,7 +135,7 @@
                                                     </value>
                                                     <value name="BOTHMOVRIGHT">
                                                       <block type="math_number" id="77">
-                                                        <field name="NUM">98</field>
+                                                        <field name="NUM">100</field>
                                                       </block>
                                                     </value>
                                                   </block>
@@ -209,7 +209,7 @@
                                     </value>
                                     <value name="BOTHMOVRIGHT">
                                       <block type="math_number" id="86">
-                                        <field name="NUM">98</field>
+                                        <field name="NUM">100</field>
                                       </block>
                                     </value>
                                     <next>
