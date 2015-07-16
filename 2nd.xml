@@ -15,7 +15,7 @@
           </block>
         </value>
         <next>
-          <block type="movement_setmotors" id="78" inline="true">
+          <block type="movement_setmotors" id="78" inline="true" disabled="true">
             <value name="BOTHMOVLEFT">
               <block type="math_number" id="79">
                 <field name="NUM">84</field>
@@ -228,6 +228,20 @@
                                                     <field name="NUM">1700</field>
                                                   </block>
                                                 </value>
+                                                <next>
+                                                  <block type="movement_setmotors" id="87" inline="true">
+                                                    <value name="BOTHMOVLEFT">
+                                                      <block type="math_number" id="88">
+                                                        <field name="NUM">84</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="BOTHMOVRIGHT">
+                                                      <block type="math_number" id="89">
+                                                        <field name="NUM">100</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </next>
                                               </block>
                                             </next>
                                           </block>
