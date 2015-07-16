@@ -18,12 +18,12 @@
           <block type="movement_setmotors" id="78" inline="true">
             <value name="BOTHMOVLEFT">
               <block type="math_number" id="79">
-                <field name="NUM">883</field>
+                <field name="NUM">1000</field>
               </block>
             </value>
             <value name="BOTHMOVRIGHT">
               <block type="math_number" id="80">
-                <field name="NUM">100</field>
+                <field name="NUM">1000</field>
               </block>
             </value>
             <next>
@@ -120,12 +120,12 @@
                                                   <block type="movement_setmotors" id="69" inline="true">
                                                     <value name="BOTHMOVLEFT">
                                                       <block type="math_number" id="76">
-                                                        <field name="NUM">883</field>
+                                                        <field name="NUM">1000</field>
                                                       </block>
                                                     </value>
                                                     <value name="BOTHMOVRIGHT">
                                                       <block type="math_number" id="77">
-                                                        <field name="NUM">100</field>
+                                                        <field name="NUM">1000</field>
                                                       </block>
                                                     </value>
                                                   </block>
