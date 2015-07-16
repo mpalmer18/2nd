@@ -1,1 +1,40 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="movement_forward" id="10" x="24" y="58">
+    <next>
+      <block type="controls_whileUntil" id="33" inline="false">
+        <field name="MODE">UNTIL</field>
+        <value name="NUMBER">
+          <block type="logic_compare" id="71" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="sensor_object" id="78">
+                <field name="OBJECT">LEFTSIDE</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="100">
+                <field name="NUM">70</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="movement_right" id="110">
+            <next>
+              <block type="robot_delay" id="112" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="119">
+                    <field name="NUM">1500</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_forward" id="129"></block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+</xml>
