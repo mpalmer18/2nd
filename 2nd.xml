@@ -1,1 +1,45 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_whileUntil" id="28" inline="false" x="-6" y="95">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="logic_compare" id="52" inline="true">
+        <field name="OP">EQ</field>
+        <value name="A">
+          <block type="sensor_spectrometer" id="15">
+            <field name="LIGHT">BLUE</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="math_number" id="59">
+            <field name="NUM">100</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="movement_forward" id="38"></block>
+    </statement>
+    <next>
+      <block type="controls_if" id="66" inline="false">
+        <value name="IF0">
+          <block type="logic_compare" id="86" inline="true">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="sensor_spectrometer" id="126">
+                <field name="LIGHT">RED</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="93">
+                <field name="NUM">75</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="movement_forward" id="136"></block>
+        </statement>
+      </block>
+    </next>
+  </block>
+</xml>
