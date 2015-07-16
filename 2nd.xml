@@ -16,7 +16,7 @@
         </value>
         <next>
           <block type="procedures_callnoreturn" id="5">
-            <mutation name="motor speed"></mutation>
+            <mutation name="motorspeed"></mutation>
             <next>
               <block type="controls_whileUntil" id="6" inline="false">
                 <field name="MODE">WHILE</field>
@@ -83,7 +83,7 @@
                             </value>
                             <next>
                               <block type="procedures_callnoreturn" id="21">
-                                <mutation name="motor speed"></mutation>
+                                <mutation name="motorspeed"></mutation>
                                 <next>
                                   <block type="robot_delay" id="22" inline="true">
                                     <value name="DELAY">
@@ -102,7 +102,7 @@
                                             </value>
                                             <next>
                                               <block type="procedures_callnoreturn" id="27">
-                                                <mutation name="motor speed"></mutation>
+                                                <mutation name="motorspeed"></mutation>
                                                 <next>
                                                   <block type="variables_set" id="28" inline="true">
                                                     <field name="VAR">direction</field>
@@ -175,7 +175,7 @@
                                 </value>
                                 <next>
                                   <block type="procedures_callnoreturn" id="41">
-                                    <mutation name="motor speed"></mutation>
+                                    <mutation name="motorspeed"></mutation>
                                     <next>
                                       <block type="robot_delay" id="42" inline="true">
                                         <value name="DELAY">
@@ -194,7 +194,7 @@
                                                 </value>
                                                 <next>
                                                   <block type="procedures_callnoreturn" id="47">
-                                                    <mutation name="motor speed"></mutation>
+                                                    <mutation name="motorspeed"></mutation>
                                                   </block>
                                                 </next>
                                               </block>
@@ -285,7 +285,7 @@
   </block>
   <block type="procedures_defnoreturn" id="61" x="-547" y="-557">
     <mutation></mutation>
-    <field name="NAME">motor speed</field>
+    <field name="NAME">motorspeed</field>
     <statement name="STACK">
       <block type="movement_setmotors" id="62" inline="true">
         <value name="BOTHMOVLEFT">
