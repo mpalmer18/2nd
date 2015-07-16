@@ -59,7 +59,7 @@
                             </value>
                             <value name="B">
                               <block type="math_number" id="14">
-                                <field name="NUM">1</field>
+                                <field name="NUM">2</field>
                               </block>
                             </value>
                           </block>
@@ -169,7 +169,7 @@
                                 </value>
                                 <value name="B">
                                   <block type="math_number" id="34">
-                                    <field name="NUM">2</field>
+                                    <field name="NUM">1</field>
                                   </block>
                                 </value>
                               </block>
